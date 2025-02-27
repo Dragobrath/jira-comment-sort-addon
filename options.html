@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Comment Sorter Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .setting {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Jira Comment Sorter Settings</h2>
+    <div class="setting">
+        <label for="sortingMode">Preferred Comment Sorting Mode:</label>
+        <select id="sortingMode">
+            <option value="asc">Newest first</option>
+            <option value="desc">Oldest first</option>
+        </select>
+    </div>
+    <div class="setting">
+        <label for="jiraUrl">Jira URL (e.g., https://yourcompany.atlassian.net):</label>
+        <input type="text" id="jiraUrl" placeholder="https://your-jira-instance.com">
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
